@@ -24,7 +24,9 @@ export default function HomePage()
         <>
             <div className='content-wrapper'>
                 {!selectToken ? (
-            <div className='card1'>
+            <div className='card1'style={{
+                    alignSelf: expanded? "flex-start" : "center"
+                }} >
                     <div className='swap-form-header'>
                             <div className='swap-menu-item'>Swap</div>
                             <div className='refresh-icon-div'>
@@ -258,7 +260,7 @@ export default function HomePage()
                     </div>
                 </div>
             )}
-                <div>
+                <div className="img-wrapper">
                     <img className='lionImage' src={lionImage} alt="lionImage"/>
                 </div>
             </div>

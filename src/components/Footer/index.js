@@ -12,8 +12,8 @@ export default function Footer()
            <div className="container mobile-width">
           <div className="footer-wrapper" id='foot-wrapper' >
             <div className="logo cursor-pointer" >
-              <img src={Logo} alt =""/>
-              <p>CroKing</p>
+              <img className='footer-logo' src={Logo} alt =""/>
+              <p className='footer-text'>CroKing</p>
             </div>
             <div className='social-icons-div'>
               <img src={telegramIcon} className="social-icons" alt="telegram-icon"/>
