@@ -3,8 +3,24 @@ footer {
     text-align: center;
   }
 
-  .footer-wrapper{
-    padding: 0em 4em;
-    position: absolute;
-    bottom: 0;
-  }
+.footer-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0em 4em;
+  position: absolute;
+  bottom: 0;
+}
+
+.social-icons-div{
+    display: flex;
+    width: auto;
+    gap: 30px;
+}
+
+.social-icons{
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+}

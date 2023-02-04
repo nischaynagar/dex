@@ -44,12 +44,19 @@ button:focus {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    padding: 0 10px;
 }
 
 .swap-menu-item{
     color: #DFBB00;
-    font-size: 17px;
-    font-weight: 700;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.token-input-wrapper{
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
 }
 
 .token-input{
@@ -66,6 +73,7 @@ button:focus {
     color: white;
     text-align: right;
     border: none;
+    width: 50%;
 }
 
 .token-input-row{
@@ -105,6 +113,7 @@ button:focus {
     font-size: 20px;
     cursor: pointer;
     width: 100%;
+    border: none;
 }
 
 .accord{
@@ -126,11 +135,13 @@ button:focus {
     cursor: pointer;
     z-index: 10;
     transition: transform 0.5s;
+    transform: rotate(0deg) translateY(-50%);
 }
 
-.swapIcon:hover {
-    transform: rotate(360deg);
-  }
+ /* .swapIcon:hover {
+    transform: rotate(360deg) translateY(-50%);
+  }  */
+
 
 .swap-mode-span{
     color: #999999;
@@ -189,7 +200,7 @@ button:focus {
 }
 
 .swap-mode-arrowicon{
-    transition: all 0.5s ease-out 0s;
+    transition: all 1s ease-out 0s;
     width: 15px;
     height: 15px;
 }
@@ -385,5 +396,8 @@ button:focus {
 @media (max-width: 50em){
     .coin-desc img {
         transform: scale(0.8);
+    }
+    .content-wrapper{
+        align-items: center;
     }
 }

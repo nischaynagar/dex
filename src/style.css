@@ -116,6 +116,8 @@
 html{
   background: #060705;
   color: white;
+  font-family: 'Open Sans';
+  font-style: normal;
 }
 
 #root{

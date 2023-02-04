@@ -31,6 +31,7 @@ export default function HomePage()
                                 <img src={refreshLogo} className='cursor-pointer refreshIcon' alt="refresh" />
                             </div>
                     </div>
+                    <div className="token-input-wrapper">
                     <div className='token-input'>
                         <div className='token-input-row buy-sell-text'>
                             You sell
@@ -80,13 +81,14 @@ export default function HomePage()
                              </div>
                         </div>
                     </div>
+                    </div>
                     <div className='token-input'>
                         <div className='swap-mode-selector'>
                             <div className='swap-mode-selector-content'
                                 style={{
                                     display: expanded ? "none" : "flex",
                                     overflow: "hidden",
-                                    transition: "all 0.5s ease-out"
+                                    transition: "all 1s ease-out"
                                     }}>
                                 <image src={InfoLogo} />
                                 <p>1ETH =  1 581.4(DAI)</p>
@@ -179,7 +181,7 @@ export default function HomePage()
                         <div className="headingtxt">Select a token</div>
                     </div>
                     <div className="searchBar">
-                        <img src={searchIcon} className="searchIcon"/>
+                        <img src={searchIcon} className="searchIcon" alt="search-icon"/>
                         <input className="search-input" type="text" placeholder="Search by name or paste address" />
                     </div>
                     <div className="token-grid">
@@ -258,7 +260,6 @@ export default function HomePage()
             )}
                 <div>
                     <img className='lionImage' src={lionImage} alt="lionImage"/>
-                    <div className='underline'></div>
                 </div>
             </div>
         </>
