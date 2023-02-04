@@ -1,0 +1,137 @@
+.primary-header {
+    z-index: 5;
+    padding-top: 1rem;
+    display: grid;
+    place-items: center;
+    font-family: 'Montserrat';
+    position: sticky;
+    top: 0;
+  }
+  
+  .nav-wrapper {
+    background: linear-gradient(180deg, #000000 -64%, #141414 84.5%);
+    padding: 1em 4em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .mobile-nav-toggle {
+    display: none;
+  }
+  
+  .nav-list {
+    font-size: 16px;
+  }
+  
+  .nav-list {
+    display: flex;
+    gap: clamp(1rem, 5vw, 3rem);
+    font-weight: var(--fw-semi-bold);
+  }
+  
+  .nav-list{
+    color: white;
+  }
+  
+  .nav-list :hover,
+  .nav-list :focus {
+    color: white;
+  }
+  .logo{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.logo p{
+  font-family: "Montserrat";
+}
+.button {
+    display: inline-flex; 
+    font-size: 16px;
+    padding: 1em 2em;
+    border-radius: 16px ;
+  }
+  
+.display-sm-hidden {
+    display: none;
+  }
+.icon-close,
+.icon-hamburger{
+    color: white;
+    z-index: 10;
+}
+.toggleDisplay{
+  display: none;
+}
+@media(min-width: 50em){
+    .display-md-inline-flex{
+        display: inline-flex;
+    }
+}
+  @media (max-width: 50em) {
+    .primary-header {
+      padding-top: 0;
+      top: 0;
+    }
+    .mobile-width{
+      width: 100% !important;
+    }
+    .nav-wrapper{
+      background-color: black !important;
+      border-radius: 0;
+      padding: 0.5em 1em;
+    }
+    .primary-navigation {
+      display: none;
+      position: fixed;
+      padding: 4em;
+      inset: 1rem 0 auto;
+      max-width: 15rem;
+      margin-left: auto;
+      background: #035D68;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      box-shadow: 0 0 0.75em rgb(0, 0, 0, 0.05);
+      z-index: 6;
+    }
+  
+    .primary-header[data-overlay]::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: 5;
+      /* height: 100vh; */
+      background-image: linear-gradient(rgb(0 0 0 / 0.3), rgb(0 0 0 / 0.8));
+    }
+  
+    .nav-list {
+      display: grid;
+      gap: var(--size-600);
+      text-align: center;
+      font-weight: var(--fw-bold);
+    }
+  
+    .primary-navigation[data-visible] {
+      display: block;
+    }
+    .toggleDisplay[data-visible]{
+      display: block;
+    }
+  
+    .mobile-nav-toggle {
+      z-index: 10;
+      display: block;
+      cursor: pointer;
+      background: transparent;
+      border: 0;
+      padding: 0.5em;
+    }
+
+    .logo img{
+        transform: scale(0.8);
+    }
+
+  }
+
+ 

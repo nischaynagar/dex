@@ -1,0 +1,54 @@
+.content-wrapper
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    padding: 5% 8%;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #17181D;
+    border-radius: 25px;
+    width: 418px;
+    min-height: 25em;
+    padding: 1em 2em;
+}
+
+.swap-form-header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.swap-menu-item{
+    color: #DFBB00;
+}
+
+.token-input{
+    display: flex;
+    flex-direction: column;
+    background: #25252D;
+    border-radius: 15px;    
+    padding: 1em 1em;
+}
+
+.input{
+    background: transparent;
+    color: white;
+    text-align: right;
+    border: none;
+}
+
+.token-input-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.select-coin{
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+}
