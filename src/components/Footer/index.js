@@ -1,5 +1,6 @@
 import React from 'react'
 import Logo from '../assests/images/logo.svg';
+import "./style.css"
 
 export default function Footer()
 {

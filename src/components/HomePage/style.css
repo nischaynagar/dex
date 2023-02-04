@@ -1,18 +1,41 @@
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+
 .content-wrapper
 {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: row;
+    align-items: flex-start;
     width: 100%;
+    height: 100%;
     padding: 5% 8%;
 }
-.card {
+.card1 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     background: #17181D;
     border-radius: 25px;
-    width: 418px;
+    width: 500px;
+    gap: 15px;
+    min-height: 25em;
+    padding: 1em 2em;
+}
+
+.card2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #17181D;
+    border-radius: 25px;
+    width: 500px;
+    gap: 25px;
     min-height: 25em;
     padding: 1em 2em;
 }
@@ -25,6 +48,8 @@
 
 .swap-menu-item{
     color: #DFBB00;
+    font-size: 17px;
+    font-weight: 700;
 }
 
 .token-input{
@@ -32,6 +57,7 @@
     flex-direction: column;
     background: #25252D;
     border-radius: 15px;    
+    gap: 5px;
     padding: 1em 1em;
 }
 
@@ -50,5 +76,314 @@
 .select-coin{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     gap: 1em;
+}
+
+.swap-mode-selector{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 12px;
+}
+
+.lionImage{
+    display: none;
+}
+
+.connect-wallet-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background: linear-gradient(90deg, #E3A400 0%, #DFBB00 100%);
+    border-radius: 15px;
+    padding: 0.5em 1em;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.accord{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.swapIconDiv{
+    display: flex;
+    justify-content: center;
+    height: 0;
+}
+
+.swapIcon{
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    z-index: 10;
+    transition: transform 0.5s;
+}
+
+.swapIcon:hover {
+    transform: rotate(360deg);
+  }
+
+.swap-mode-span{
+    color: #999999;
+}
+
+.swap-mode-selector-content{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.arrowIcon{
+    width: 15px;
+    height: 15px;
+}
+
+.arrowIconback{
+    transform: rotate(92deg);
+    align-self: center;
+    cursor: pointer;
+}
+
+.refreshIcon{
+    border-radius: 20%;
+    height: 20px;
+    width: 20px;
+}
+
+.buy-sell-text{
+    font-weight: 700;
+    font-size: 10px;
+    color: #787878;
+}
+
+.coin-desc{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.coin-name{
+    font-size: 10px;
+}
+
+.underline{
+    background: linear-gradient(90deg, #DFBB00 0%, #E3A400 109.3%);
+    border-radius: 9px;
+    width: 100%;
+    height: 8px;
+}
+
+.coin-val{
+    font-size: 10px;
+    color: #787878;
+    font-weight: 700;
+}
+
+.swap-mode-arrowicon{
+    transition: all 0.5s ease-out 0s;
+    width: 15px;
+    height: 15px;
+}
+
+.modes{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    gap: 20px;
+}
+
+.mode-option-selected{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #DFBB00;
+    border: 1px solid #DFBB00;
+    border-radius: 10px;
+    padding: 1em;
+    color: #020202;
+    font-size: 13px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.mode-option-notselected{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #1D1D23;
+    border: 1px solid #DFBB00;
+    border-radius: 10px;
+    padding: 1em;
+    font-size: 13px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.bold{
+    font-weight: bolder;
+}
+
+.grid-container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 10px;
+    padding: 40px 20px;
+}
+
+.grid-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.value-desc{
+    display: flex;
+    gap: 10px;
+    align-items: flex-end;
+}
+
+.hidebtn{
+    color: #627EEA;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.highlighted-token-amount{
+    color: #DFBB00;
+}
+
+.usd-token-price{
+    color: #BFBFBF;
+    font-size: 13px;
+}
+
+.btn-wrapper{
+    display: flex;
+    justify-content: center;
+    padding: 0 1em;
+}
+
+.select-token-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.headingtxt{
+    align-self: center;
+    margin: 0 auto;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.searchBar{
+    background: #25252D;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.search-input{
+    border: none;
+    background: #25252D;
+    border-radius: 15px;
+    color: white;
+    width: 100%;
+}
+
+.searchIcon{
+    height: 20px;
+    width: 20px;
+}
+
+.token-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 10px;
+}
+
+.fav-tokens{
+    border: 1px solid #DFBB00;
+    border-radius: 10px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+    padding: 5px;
+}
+
+.fav-tokens img{
+    height: 30px;
+    width: 30px;
+}
+
+.separator{
+    border: 1px solid rgba(153, 153, 153, 0.25);
+}
+
+.select-accordion{
+    height: 220px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.token-choice{
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 0 5px;
+}
+
+.token-symbol{
+    color: rgba(255, 255, 255, 0.42);
+    font-size: 10px;
+}
+
+.pinned{
+    align-self: center;
+    display: flex;
+    width: 100%;
+    justify-content: end;
+}
+
+.pin-align{
+    width: 10px;
+    height: 10px;
+}
+
+@media only screen and (min-width: 1060px)  {
+    .lionImage{
+        display: block;
+    }
+    .content-wrapper{
+        justify-content: space-between;
+    }
+    .token-grid{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, auto);
+        grid-gap: 10px;
+    }
+}
+
+@media (max-width: 50em){
+    .coin-desc img {
+        transform: scale(0.8);
+    }
 }
