@@ -68,6 +68,16 @@ button:focus {
     padding: 1em 1em;
 }
 
+.token-input2{
+    display: flex;
+    flex-direction: column;
+    background: #1D1D23;
+    border: 1px solid #DFBB00;
+    border-radius: 15px;
+    gap: 5px;
+    padding: 1em 1em;
+}
+
 .input{
     background: transparent;
     color: white;
@@ -380,6 +390,10 @@ button:focus {
 
 .img-wrapper{
     max-width: 60%;
+}
+
+.leagacy-icon{
+    margin-bottom: 5px;
 }
 
 @media only screen and (min-width: 1060px)  {

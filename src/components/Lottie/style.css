@@ -1,0 +1,11 @@
+.lighteningLottiec1{
+    height: 20px;
+    width: 20px;
+    transform: scaleX(-1);
+}
+
+.lighteningLottiec2{
+    height: 40px;
+    width: 40px;
+    transform: scaleX(-1);
+}

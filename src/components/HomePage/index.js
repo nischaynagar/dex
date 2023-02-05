@@ -60,7 +60,7 @@ export default function HomePage()
                     <div className='swapIconDiv'>
                         <img src={swapIcon} className="swapIcon"  alt="swap-icon"/>
                     </div>
-                    <div className='token-input'>
+                    <div className='token-input2'>
                         <div className='token-input-row buy-sell-text'>
                             You sell
                         </div>
@@ -92,7 +92,7 @@ export default function HomePage()
                                     overflow: "hidden",
                                     transition: "all 1s ease-out"
                                     }}>
-                                <image src={InfoLogo} />
+                                <img src={InfoLogo} alt="info-logo"/>
                                 <p>1ETH =  1 581.4(DAI)</p>
                                 <span className='swap-mode-span'>$ 1.5585</span>
                             </div>
@@ -112,6 +112,7 @@ export default function HomePage()
                                     overflow: "hidden",
                                     transition: "all 0.5s ease-out"
                                     }}>
+                                    <Lottie1 Class="lighteningLottiec1" />
                                     $3.07
                                 </div>
                              <img onClick={() => setExpanded(!expanded)} src={arrowWStroke} className="cursor-pointer swap-mode-arrowicon" alt="arrow"
@@ -127,11 +128,12 @@ export default function HomePage()
                             >
                                 <div className="modes">
                                     <div className="mode-option-notselected">
+                                        <Lottie1 Class="lighteningLottiec2" />
                                         <span>Lightning = Fast</span>
                                         <span>Tx Cost $0</span>
                                     </div>
                                     <div className="mode-option-selected">
-                                        <img src={legacyIcon} className='' alt="legacyIcon" />
+                                        <img src={legacyIcon} className='leagacy-icon' alt="legacyIcon" />
                                         <span>Legacy = <b className="bold">Normal</b></span>
                                         <span>Tx Cost $3.98</span>
                                     </div>
