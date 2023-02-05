@@ -389,7 +389,12 @@ button:focus {
 }
 
 .img-wrapper{
+    scale: 1.2;
     max-width: 60%;
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    z-index: -1;
 }
 
 .leagacy-icon{
@@ -402,6 +407,7 @@ button:focus {
     }
     .content-wrapper{
         justify-content: space-between;
+        padding: 2% 10%;
     }
     .token-grid{
         display: grid;
