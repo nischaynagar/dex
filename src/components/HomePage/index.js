@@ -90,7 +90,6 @@ export default function HomePage()
                                 style={{
                                     display: expanded ? "none" : "flex",
                                     overflow: "hidden",
-                                    transition: "all 1s ease-out"
                                     }}>
                                 <img src={InfoLogo} alt="info-logo"/>
                                 <p>1ETH =  1 581.4(DAI)</p>
@@ -110,12 +109,16 @@ export default function HomePage()
                                 <div style={{
                                     display: expanded ? "none" : "flex",
                                     overflow: "hidden",
-                                    transition: "all 0.5s ease-out"
                                     }}>
                                     <Lottie1 Class="lighteningLottiec1" />
                                     $3.07
                                 </div>
-                             <img onClick={() => setExpanded(!expanded)} src={arrowWStroke} className="cursor-pointer swap-mode-arrowicon" alt="arrow"
+                             <img 
+                                onClick={() => setExpanded(!expanded)} 
+                                src={arrowWStroke} 
+                                className="cursor-pointer swap-mode-arrowicon"
+                                style={{transform: expanded ? "scale(-1)" : "scale(1)" }} 
+                                alt="arrow"
                              />
                             </div>
                         </div>

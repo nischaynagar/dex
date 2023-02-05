@@ -9,8 +9,7 @@ footer {
   align-items: center;
   width: 100%;
   padding: 0.5em 2em;
-  position: fixed;
-  bottom: 0;
+  background: #010101;
 }
 
 .social-icons-div{

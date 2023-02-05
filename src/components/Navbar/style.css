@@ -41,14 +41,16 @@
     display: flex;
     align-items: center;
     color: white;
-}
-.logo p{
-  font-family: "Montserrat";
-}
+  }
+  
+  .logo p{
+    font-family: 'Libre Baskerville', serif;
+  }
+
 .button {
     display: inline-flex; 
     font-size: 16px;
-    padding: 1em 2em;
+    padding: 0.75em 2em;
     border-radius: 16px ;
   }
   

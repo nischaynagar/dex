@@ -15,6 +15,8 @@ button:focus {
     width: 100%;
     height: 100%;
     padding: 1% 6%;
+    flex-grow: 1;
+    overflow-y: auto;
 }
 .card1 {
     display: flex;
@@ -25,7 +27,7 @@ button:focus {
     width: 500px;
     gap: 15px;
     min-height: 25em;
-    padding: 1em 2em;
+    padding: 2em 2em;
 }
 
 .card2 {
@@ -37,7 +39,7 @@ button:focus {
     width: 500px;
     gap: 25px;
     min-height: 25em;
-    padding: 1em 2em;
+    padding: 2em 2em;
 }
 
 .swap-form-header{
@@ -95,7 +97,7 @@ button:focus {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 1em;
+    gap: 8px;
 }
 
 .swap-mode-selector{
@@ -146,6 +148,8 @@ button:focus {
     z-index: 10;
     transition: transform 0.5s;
     transform: rotate(0deg) translateY(-50%);
+    background: black;
+    border-radius: 50%;
 }
 
  /* .swapIcon:hover {
@@ -210,7 +214,6 @@ button:focus {
 }
 
 .swap-mode-arrowicon{
-    transition: all 1s ease-out 0s;
     width: 15px;
     height: 15px;
 }
