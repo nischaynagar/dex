@@ -25,7 +25,7 @@ export default function HomePage()
     const [isRotating, setIsRotating] = useState(false);
     const handleRefreshClick = () => {
         setIsRotating(true);
-        setTimeout(() => setIsRotating(false), 500); // rotate for 5 seconds
+        setTimeout(() => setIsRotating(false), 500); // rotate for 5 milliseconds
       };
 
     return (
