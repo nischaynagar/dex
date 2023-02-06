@@ -41,7 +41,7 @@ export default function HomePage()
                         <div className='token-input-row'>
                             <div onClick={()=>setSelectToken(true)} className='select-coin cursor-pointer'>
                                 <div className='coin-desc'>
-                                    <img src={daiIcon} alt ="dai-icon" />
+                                    <img src={daiIcon} alt ="dai-icon"/>
                                     DAI
                                 </div>
                              <img src={arrowWStroke} className="arrowIcon" alt="arrow"/>
@@ -62,7 +62,7 @@ export default function HomePage()
                     </div>
                     <div className='token-input2'>
                         <div className='token-input-row buy-sell-text'>
-                            You sell
+                            You Buy
                         </div>
                         <div className='token-input-row'>
                             <div onClick={()=>setSelectToken(true)} className='select-coin cursor-pointer'>
@@ -193,42 +193,42 @@ export default function HomePage()
                     </div>
                     <div className="token-grid">
                         <div className="fav-tokens">
-                            <img src={daiIcon} alt ="dai-icon" />
+                            <img src={ethIcon} alt ="eth-icon" />
                             <div>ETH</div>
                         </div>
                         <div className="fav-tokens">
-                            <img src={daiIcon} alt ="dai-icon" />
+                            <img src={ethIcon} alt ="eth-icon" />
                             <div>ETH</div>
                         </div>
                         <div className="fav-tokens">
-                            <img src={daiIcon} alt ="dai-icon" />
+                            <img src={ethIcon} alt ="eth-icon" />
                             <div>ETH</div>
                         </div>
                         <div className="fav-tokens">
-                            <img src={daiIcon} alt ="dai-icon" />
+                            <img src={ethIcon} alt ="eth-icon" />
                             <div>ETH</div>
                         </div>
                         <div className="fav-tokens">
-                            <img src={daiIcon} alt ="dai-icon" />
+                            <img src={ethIcon} alt ="eth-icon" />
                             <div>ETH</div>
                         </div>
                         <div className="fav-tokens">
-                            <img src={daiIcon} alt ="dai-icon" />
+                            <img src={ethIcon} alt ="eth-icon" />
                             <div>ETH</div>
                         </div>
                         <div className="fav-tokens">
-                            <img src={daiIcon} alt ="dai-icon" />
+                            <img src={ethIcon} alt ="eth-icon" />
                             <div>ETH</div>
                         </div>
                         <div className="fav-tokens">
-                            <img src={daiIcon} alt ="dai-icon" />
+                            <img src={ethIcon} alt ="eth-icon" />
                             <div>ETH</div>
                         </div>
                     </div>
                     <div className="separator"></div>
                     <div className="select-accordion">
                         <div className="token-choice">
-                            <img src={daiIcon} alt ="dai-icon" />
+                            <img src={ethIcon} alt ="eth-icon" />
                             <div className="">
                             <div className="token-name">
                                  Ethereum
@@ -241,7 +241,7 @@ export default function HomePage()
                             </div>
                         </div>
                         <div className="token-choice">
-                            <img src={daiIcon} alt ="dai-icon" />
+                            <img src={ethIcon} alt ="eth-icon" />
                             <div className="">
                             <div className="token-name">
                                  Ethereum
@@ -254,7 +254,7 @@ export default function HomePage()
                             </div>
                         </div>
                         <div className="token-choice">
-                            <img src={daiIcon} alt ="dai-icon" />
+                            <img src={ethIcon} alt ="eth-icon" />
                             <div className="">
                             <div className="token-name">
                                  Ethereum

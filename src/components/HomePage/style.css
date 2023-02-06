@@ -98,6 +98,12 @@ button:focus {
     justify-content: space-between;
     align-items: center;
     gap: 8px;
+    border-radius: 10px;
+    padding: 3px 8px;
+}
+
+.select-coin:hover{
+    background-color: rgba(153, 153, 153, 0.25);
 }
 
 .swap-mode-selector{
@@ -194,6 +200,11 @@ button:focus {
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+.coin-desc img{
+    height: 30px;
+    width: 30px;
 }
 
 .coin-name{
@@ -347,6 +358,7 @@ button:focus {
     display: flex;
     width: 100%;
     justify-content: center;
+    align-items: center;
     gap: 10px;
     padding: 5px;
 }
@@ -403,6 +415,20 @@ button:focus {
 .leagacy-icon{
     margin-bottom: 5px;
 }
+
+.refresh-icon-div{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.refresh-icon-div:hover{
+    background-color: rgba(153, 153, 153, 0.25);
+}
+
 
 @media only screen and (min-width: 1060px)  {
     .lionImage{
