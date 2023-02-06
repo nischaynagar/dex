@@ -225,9 +225,18 @@ button:focus {
 }
 
 .swap-mode-arrowicon{
-    width: 15px;
-    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px 4px;
+    cursor: pointer;
+    border-radius: 5px;
 }
+
+.swap-mode-arrowicon:hover{
+    background-color: rgba(153, 153, 153, 0.25);
+}
+
 
 .modes{
     display: flex;
@@ -441,6 +450,21 @@ button:focus {
         transform: rotate(360deg);
     }
 }
+
+.backIcon-div{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.backIcon-div:hover{
+    background-color: rgba(153, 153, 153, 0.25);
+}
+
 
 @media only screen and (min-width: 1060px)  {
     .lionImage{

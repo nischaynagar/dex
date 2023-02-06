@@ -121,13 +121,15 @@ export default function HomePage()
                                     <Lottie1 Class="lighteningLottiec1" />
                                     $3.07
                                 </div>
+                            <div onClick={() => setExpanded(!expanded)}
+                                 className="swap-mode-arrowicon">
                              <img 
-                                onClick={() => setExpanded(!expanded)} 
+                                 
                                 src={arrowWStroke} 
-                                className="cursor-pointer swap-mode-arrowicon"
                                 style={{transform: expanded ? "scale(-1)" : "scale(1)" }} 
                                 alt="arrow"
                              />
+                             </div>
                             </div>
                         </div>
                             <div
@@ -192,7 +194,9 @@ export default function HomePage()
             ) :  ( 
                 <div className="card2">
                     <div className="select-token-header">
-                        <img onClick={()=>setSelectToken(false)}  src={arrowWStroke} className="arrowIconback" alt="arrow"/>
+                        <div className="backIcon-div" onClick={()=>setSelectToken(false)}  >
+                        <img src={arrowWStroke} className="arrowIconback" alt="arrow"/>
+                        </div>
                         <div className="headingtxt">Select a token</div>
                     </div>
                     <div className="searchBar">
