@@ -20,6 +20,14 @@ export default function HomePage()
 
     const [expanded, setExpanded] = useState(false);
     const [selectToken, setSelectToken] = useState(false);
+
+    // Refresh btn
+    const [isRotating, setIsRotating] = useState(false);
+    const handleRefreshClick = () => {
+        setIsRotating(true);
+        setTimeout(() => setIsRotating(false), 500); // rotate for 5 seconds
+      };
+
     return (
         <>
             <div className='content-wrapper'>
@@ -30,7 +38,7 @@ export default function HomePage()
                     <div className='swap-form-header'>
                             <div className='swap-menu-item'>Swap</div>
                             <div className='refresh-icon-div'>
-                                <img src={refreshLogo} className='cursor-pointer refreshIcon' alt="refresh" />
+                                <img onClick={handleRefreshClick} src={refreshLogo} className={`cursor-pointer refreshIcon ${isRotating ? "rotating" : ""}`} alt="refresh" />
                             </div>
                     </div>
                     <div className="token-input-wrapper">

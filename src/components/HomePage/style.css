@@ -429,6 +429,18 @@ button:focus {
     background-color: rgba(153, 153, 153, 0.25);
 }
 
+.rotating {
+    animation: rotation 0.5s infinite linear;
+  }
+  
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
 
 @media only screen and (min-width: 1060px)  {
     .lionImage{
