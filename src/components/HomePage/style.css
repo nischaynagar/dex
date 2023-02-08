@@ -508,7 +508,8 @@ button:focus {
         align-items: center;
     }
     .swap-mode-selector-content{
-        font-size: 0.5rem;
+        font-size: 0.6rem;
+        letter-spacing: 0.04rem;
     }
     .swap-mode-arrowicon img{
         scale: 0.75;
