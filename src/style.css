@@ -29,6 +29,8 @@
   body {
     overflow-x: hidden;
     height: 100%;
+    font-family: 'Open Sans';
+    font-style: normal;
   }
  
   /* Set core body defaults */

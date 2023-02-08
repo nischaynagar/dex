@@ -86,6 +86,7 @@ button:focus {
     text-align: right;
     border: none;
     width: 50%;
+    font-size: 1.75rem;
 }
 
 .token-input-row{
@@ -99,7 +100,7 @@ button:focus {
     align-items: center;
     gap: 8px;
     border-radius: 10px;
-    padding: 3px 8px;
+    padding: 3px 0px;
 }
 
 .select-coin:hover{
@@ -111,6 +112,10 @@ button:focus {
     justify-content: space-between;
     width: 100%;
     font-size: 12px;
+    align-items: center;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
 }
 
 .lionImage{
@@ -139,6 +144,7 @@ button:focus {
     gap: 10px;
     width: 100%;
     justify-content: flex-end;
+    align-items: center;
 }
 
 .swapIconDiv{
@@ -243,6 +249,9 @@ button:focus {
     justify-content: space-between;
     padding: 1em;
     gap: 20px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
 }
 
 .mode-option-selected{
@@ -284,6 +293,10 @@ button:focus {
     flex-direction: column;
     gap: 10px;
     padding: 40px 20px;
+    font-size: 0.75rem;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
 }
 
 .grid-row{
@@ -483,10 +496,19 @@ button:focus {
 }
 
 @media (max-width: 50em){
+    .coin-desc{
+        gap: 5px;
+    }
     .coin-desc img {
         transform: scale(0.8);
     }
     .content-wrapper{
         align-items: center;
+    }
+    .swap-mode-selector-content{
+        font-size: 0.5rem;
+    }
+    .swap-mode-arrowicon img{
+        scale: 0.75;
     }
 }

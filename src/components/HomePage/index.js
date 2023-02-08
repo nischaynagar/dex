@@ -61,7 +61,7 @@ export default function HomePage()
                                  Dai Stablecoin
                              </div>
                              <div className="coin-val">
-                                 aprox $1.1213
+                                 approx $1.1213
                              </div>
                         </div>
                     </div>
@@ -87,7 +87,7 @@ export default function HomePage()
                                  Ethereum
                              </div>
                              <div className="coin-val">
-                                 aprox $1.1213
+                                 approx $1.1213
                              </div>
                         </div>
                     </div>
@@ -100,8 +100,8 @@ export default function HomePage()
                                     overflow: "hidden",
                                     }}>
                                 <img src={InfoLogo} alt="info-logo"/>
-                                <p>1ETH =  1 581.4(DAI)</p>
-                                <span className='swap-mode-span'>$ 1.5585</span>
+                                <p>1ETH&nbsp;=&nbsp;1581.4(DAI)</p>
+                                <span className='swap-mode-span'>$1.5585</span>
                             </div>
                             <div 
                                 style={{
@@ -142,43 +142,43 @@ export default function HomePage()
                                 <div className="modes">
                                     <div className="mode-option-notselected">
                                         <Lottie1 Class="lighteningLottiec2" />
-                                        <span>Lightning = Fast</span>
-                                        <span>Tx Cost $0</span>
+                                        <span>Lightning&nbsp;=&nbsp;Fast</span>
+                                        <span>Tx&nbsp;Cost&nbsp;$0</span>
                                     </div>
                                     <div className="mode-option-selected">
                                         <img src={legacyIcon} className='leagacy-icon' alt="legacyIcon" />
-                                        <span>Legacy = <b className="bold">Normal</b></span>
-                                        <span>Tx Cost $3.98</span>
+                                        <span>Legacy&nbsp;=&nbsp;<b className="bold">Normal</b></span>
+                                        <span>Tx&nbsp;Cost&nbsp;$3.98</span>
                                     </div>
                                 </div>
                                 <div class="grid-container">
                                     <div className="grid-row">
                                     <div>
-                                        1 ETH price
+                                        1&nbsp;ETH&nbsp;price
                                     </div>
                                     <div className="value-desc">
-                                        <span className="usd-token-price">($1 588.5)</span>
-                                        <span className="highlighted-token-amount">1 581.4 (DAI)</span>
+                                        <span className="usd-token-price">($1588.5)</span>
+                                        <span className="highlighted-token-amount">1581.4&nbsp;(DAI)</span>
                                     </div>
                                     </div>
                                     <div className="grid-row">
                                     <div>
-                                        1 DAI price
+                                        1&nbsp;DAI&nbsp;price
                                     </div>
                                     <div className="value-desc">
-                                        <span className="usd-token-price">($1 588.598)</span>
-                                        <span className="highlighted-token-amount">1 581.4 (ETH)</span>
+                                        <span className="usd-token-price">($1588.598)</span>
+                                        <span className="highlighted-token-amount">1581.4&nbsp;(ETH)</span>
                                     </div>
                                     </div>
                                     <div className="grid-row">
                                     <div>
-                                        Tx Cost
+                                        Tx&nbsp;Cost
                                     </div>
                                     <div className="value-desc">
                                         <button className="hidebtn">Hide</button>
                                         <img src={walkingman} className='cursor-pointer refreshIcon' alt="refresh" />
-                                        <span className="usd-token-price">($1 588.5)</span>
-                                        <span className="highlighted-token-amount">1 581.4 (DAI)</span>
+                                        <span className="usd-token-price">($1588.5)</span>
+                                        <span className="highlighted-token-amount">1581.4&nbsp;(DAI)</span>
                                     </div>
                                     </div>
                                 </div>
