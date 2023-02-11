@@ -12,6 +12,8 @@ import walkingman from "../assests/images/walkingman.svg"
 import searchIcon from "../assests/images/searchIcon.svg"
 import pin from "../assests/images/pin.svg"
 import highlightedpin from "../assests/images/highlightedPin.svg"
+import settingsIcon from "../assests/images/settingsIcon.svg"
+import questionMarkIcon from "../assests/images/questionMarkIcon.svg"
 import "./style.css";
 import { Lottie1 } from '../Lottie';
 
@@ -20,6 +22,13 @@ export default function HomePage()
 
     const [expanded, setExpanded] = useState(false);
     const [selectToken, setSelectToken] = useState(false);
+
+    const [settings, setSettings] = useState(false);
+    const handelSettingsClick = ()=> {
+        setSettings(true);
+    }
+
+    const [selectedTolerance, setSelectedTolerance] = useState(0.5);
 
     // Refresh btn
     const [isRotating, setIsRotating] = useState(false);
@@ -32,13 +41,45 @@ export default function HomePage()
         <>
             <div className='content-wrapper'>
                 {!selectToken ? (
-            <div className='card1'style={{
+                    settings ? (
+                    <div className="settingsCard">
+                        <div className="settingsCardHeader">
+                            <div className="backIcon-div" onClick={()=>setSettings(false)}  >
+                                <img src={arrowWStroke} className="arrowIconback" alt="arrow"/>
+                            </div>
+                        </div>
+                        <div className="settingsCardBody">
+                            <div className="slippageToleranceHeaderWrapper">
+                                <div>Slippage tolerance</div>
+                                <img src={questionMarkIcon} alt ="question-mark-icon"/>
+                            </div>
+                            <div className="toleranceOptionsDiv">
+                                <div className="toleranceOptions cursor-pointer" style={{backgroundColor: (selectedTolerance === 0.1) ? "#DFBB00" : "#25252D", color : (selectedTolerance === 0.1) ? "#17181D" : "#999999"}} onClick={()=>setSelectedTolerance(0.1)}>0.1%</div>
+                                <div className="toleranceOptions cursor-pointer" style={{backgroundColor: (selectedTolerance === 0.5) ? "#DFBB00" : "#25252D", color : (selectedTolerance === 0.5) ? "#17181D" : "#999999"}} onClick={()=>setSelectedTolerance(0.5)}>0.5%</div>
+                                <div className="toleranceOptions cursor-pointer" style={{backgroundColor: (selectedTolerance === 1.0) ? "#DFBB00" : "#25252D", color : (selectedTolerance === 1.0) ? "#17181D" : "#999999"}} onClick={()=>setSelectedTolerance(1.0)}>1.0%</div>
+                                <div className="toleranceOptions cursor-pointer" style={{backgroundColor: (selectedTolerance === 1.5) ? "#DFBB00" : "#25252D", color : (selectedTolerance === 1.5) ? "#17181D" : "#999999"}} onClick={()=>setSelectedTolerance(1.5)}>1.5%</div>
+                            </div>
+                            <div className="TxDivWrapper">
+                                <div className="TxTitleWrapper">
+                                    <div>Tx deadline (mins)</div>
+                                    <img src={questionMarkIcon} alt ="question-mark-icon"/>
+                                </div>
+                                    <div className="toleranceOptions">20</div>
+                            </div>
+                        </div>
+                    </div>) :
+            (<div className='card1' style={{
                     alignSelf: expanded? "flex-start" : "center"
                 }} >
                     <div className='swap-form-header'>
                             <div className='swap-menu-item'>Swap</div>
-                            <div className='refresh-icon-div'>
-                                <img onClick={handleRefreshClick} src={refreshLogo} className={`cursor-pointer refreshIcon ${isRotating ? "rotating" : ""}`} alt="refresh" />
+                            <div className="icon-wrapper">
+                                <div className='refresh-icon-div'>
+                                    <img onClick={handleRefreshClick} src={refreshLogo} className={`refreshIcon ${isRotating ? "rotating" : ""}`} alt="refresh" />
+                                </div>
+                                <div className='settings-icon-div'>
+                                    <img onClick={handelSettingsClick} src={settingsIcon} className="settingsIcon" alt="settings-icon" />
+                                </div>
                             </div>
                     </div>
                     <div className="token-input-wrapper">
@@ -190,7 +231,7 @@ export default function HomePage()
                             Connect Wallet
                         </button>
                     </div>
-                </div> 
+                </div> )
             ) :  ( 
                 <div className="card2">
                     <div className="select-token-header">

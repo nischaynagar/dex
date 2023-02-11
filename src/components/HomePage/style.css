@@ -194,6 +194,14 @@ button:focus {
     border-radius: 20%;
     height: 20px;
     width: 20px;
+    cursor: pointer;
+}
+
+.settingsIcon{
+    border-radius: 20%;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
 }
 
 .buy-sell-text{
@@ -452,6 +460,19 @@ button:focus {
     background-color: rgba(153, 153, 153, 0.25);
 }
 
+.settings-icon-div{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.settings-icon-div:hover{
+    background-color: rgba(153, 153, 153, 0.25);
+}
+
 .rotating {
     animation: rotation 0.5s infinite linear;
   }
@@ -480,6 +501,68 @@ button:focus {
     background-color: rgba(153, 153, 153, 0.25);
 }
 
+
+.icon-wrapper{
+    display: flex;
+}
+
+.settingsCard{
+    display: flex;
+    flex-direction: column;
+    background: #17181D;
+    border-radius: 25px;
+    width: 500px;
+    gap: 15px;
+    min-height: 25em;
+    padding: 2em 1em;
+    align-self: center;
+}
+
+.settingsCardBody{
+    padding: 0 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.slippageToleranceHeaderWrapper{
+    display: flex;
+    gap: 5px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.toleranceOptionsDiv{
+    display: flex;
+    justify-content: space-between;
+}
+
+.toleranceOptions{
+    background: #25252D;
+    padding: 5px 20px;
+    border-radius: 18.5px;
+    font-style: normal;
+    font-weight: 600;
+    color: #999999;
+    font-size: 1.25rem;
+}
+
+.TxDivWrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.TxTitleWrapper{
+    display: flex;
+    gap: 5px;
+}
 
 @media only screen and (min-width: 1060px)  {
     .lionImage{
